@@ -14,6 +14,8 @@ html {
   body{
     background-color:#fd4ca5;
     font-family: "Rubik Wet Paint", system-ui;
+    a:visited { color: #ffd3f5; }
+    a:hover { color: #b112a9; }
   }
   
   main{
