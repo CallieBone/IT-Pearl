@@ -1,0 +1,42 @@
+/* 
+Color Colors
+#cc3a67
+*/
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body{
+    background-color:#fd4ca5;
+    font-family: "Rubik Wet Paint", system-ui;
+  }
+  
+  main{
+    background-color:#ffffff;
+    width:60vw;
+    /* long form */
+    margin-top:40px;
+    margin-right:auto;
+    margin-bottom:40px;
+    margin-left:auto;
+ /* Top / Right / Bottom / Left */
+  margin: 40px auto 40px auto;
+/* TOP/Bottom | LEFT/RIGHT */
+    margin: 40px auto;
+    border: 2px solid #f7beff;
+  }
+
+  
+  
+  header.primary {
+    background-color:#8fbdd9;
+    padding:20px;
+    background-image: url(../img/pinkie-pie-my-little-pony-51354-1920x1200.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
