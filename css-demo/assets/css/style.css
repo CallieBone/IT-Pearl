@@ -1,6 +1,11 @@
 /* 
 Color Colors
-#cc3a67
+#shades of pink
+*/
+
+/* 
+"." is for class selectors
+"#" is for section ID[Elements]
 */
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -10,11 +15,17 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  /* -------- Utility Classes --------*/
+  
+.container {
+  padding: 40px;
+}
   
   body{
     background-color:#fd4ca5;
     font-family: "Rubik Wet Paint", system-ui;
-    a:visited { color: #ffd3f5; }
+    a:visited { color: #ffd3f5; }  
     a:hover { color: #b112a9; }
   }
   
@@ -41,4 +52,81 @@ html {
     background-image: url(../img/pinkie-pie-my-little-pony-51354-1920x1200.jpg);
     background-repeat:no-repeat;
     background-size:cover;
+    display: flex;
+    border-bottom:3px solid #ff639f;
   }
+
+  header.primary h1 a { 
+    color: #ff0062; 
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px  #b112a9;
+  }
+
+  header.primary h2 {
+    text-shadow: 2px 2px #ff93c9;
+    color:rgb(128, 52, 96)
+  }
+
+
+
+  header.primary nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+  }
+
+  header.primary nav ul li {
+    margin-bottom: 10px;
+  }
+
+  header.primary nav ul li a{
+    border: 1px solid #fd4ca5;
+    border-right: 10px solid #c738d4;
+    border-radius: 20px 0;
+    color:#ff0062;
+    display: block;
+    background-color:rgb(252, 92, 217, .7);
+    padding: 10px 10px 10px 0;
+    text-align: right;
+    transition: .10s;
+    text-decoration: none;
+  }
+
+  header.primary nav a:hover {
+    background-color:rgb(255, 101, 178);
+    text-decoration: underline;
+  }
+
+  header.primary div.hgroup{
+    width:70%;
+
+  }
+
+  header.primary nav{
+    width:30%;
+  }
+
+  #content{
+    line-height: 1.8rem;
+  }
+
+  #content h2{
+color:#ff52cbb7;
+border-left: 7.5px solid #ca004e;
+padding-left: 7.5px;
+border-radius:15px 0;
+  }
+
+  #content h3{
+    color:#ff52cbb7;
+    border-left: 7.5px solid #6d1839;
+    padding-left: 7.5px;
+    border-radius:15px 0;
+      }
+  
+
+/*  header.primary h1, header.primary h2{
+    margin: 0;
+  }
+    */
