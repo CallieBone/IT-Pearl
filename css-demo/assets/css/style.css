@@ -1,7 +1,13 @@
-/* 
-Color Colors
-#shades of pink
+/* Color Scheme(Shades): 
+#D31557
+#B11249
+#DB165C
+#8F0E3B
+#6D0B2D
+#4B071F
 */
+
+
 
 /* 
 "." is for class selectors
@@ -14,6 +20,10 @@ html {
   }
   *, *:before, *:after {
     box-sizing: inherit;
+  }
+
+  img{
+    max-width: 100%;
   }
 
   /* -------- Utility Classes --------*/
@@ -47,7 +57,7 @@ html {
   
   
   header.primary {
-    background-color:#8fbdd9;
+    background-color:#ff93c9;
     padding:20px;
     background-image: url(../img/pinkie-pie-my-little-pony-51354-1920x1200.jpg);
     background-repeat:no-repeat;
@@ -118,13 +128,74 @@ padding-left: 7.5px;
 border-radius:15px 0;
   }
 
-  #content h3{
+  #content h3, article.widget h2{
     color:#ff52cbb7;
     border-left: 7.5px solid #6d1839;
     padding-left: 7.5px;
     border-radius:15px 0;
       }
-  
+
+  #blog.container{
+    background-color: #6d1839;
+    padding: 20px 0;
+    border-top:6px double #ff93c9; 
+  border-bottom:6px double #ff93c9; 
+  }
+
+  #blog > h2{
+    color:#ff93c9;
+    text-shadow: 2px 2px  #000;
+    font-size:2.2rem;
+    margin: 20px;
+  }
+
+  #blog article.post {
+    background-color: #ff0062;
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows:auto;
+    grid-template-areas:
+    "figure header"
+    "figure post-content"
+    "figure post-meta"
+  }
+
+  #blog article figure{
+    grid-area:figure;
+  margin:0 20px 0 0;
+  }
+
+  #blog article header{
+    grid-area:header;
+  }
+
+  #blog article.post-content{
+    grid-area:post-content;
+  }
+
+  #blog article.post-meta{
+    grid-area:post-meta;
+  }
+
+aside .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:auto;
+  gap: 40px ;
+}
+
+#colophon{
+  text-align: center;
+  background-image: url(../img/pinkie-pie-my-little-pony-51354-1920x1200.jpg);
+  background-repeat:no-repeat;
+  background-size:auto
+  color:#fff;
+  padding: 20px;
+}
+
+
 
 /*  header.primary h1, header.primary h2{
     margin: 0;
