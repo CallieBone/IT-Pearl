@@ -1,0 +1,10 @@
+body {
+background-color:rgb(165, 165, 165)
+}
+
+h1 {
+    background-color: #ffffff;
+    color: #000000;
+    text-shadow: 1px 1px 20px #a59191;
+    text-align: center;
+}
